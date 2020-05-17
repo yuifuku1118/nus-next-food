@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>203364224382-cr39397amrp1dngr6haa4b9smohkcs5l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.203364224382-cr39397amrp1dngr6haa4b9smohkcs5l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAsTghM2ibZG5Nc72qF9VE_7WXX1uvSjIo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>203364224382</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nusextfood.appPrototype1</string>
+	<key>PROJECT_ID</key>
+	<string>nusnextfood-c7ad4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nusnextfood-c7ad4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:203364224382:ios:10dc05e111c5145c2f372f</string>
+	<key>DATABASE_URL</key>
+	<string>https://nusnextfood-c7ad4.firebaseio.com</string>
+</dict>
+</plist>
