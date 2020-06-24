@@ -10,12 +10,16 @@ import UIKit
 import CoreData
 import Firebase
 import FirebaseFirestore
+import CoreLocation
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, CLLocationManagerDelegate {
     
     
     let shopdatabase = Database()
-
+    var locationManager = CLLocationManager()
+    
+    var curLongni : Double?
+    var curLangni : Double?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +31,44 @@ class FirstViewController: UIViewController {
         
         shopdatabase.setData()
 
-        
+
         
         // Do any additional setup after loading the view.
+        locationManager = CLLocationManager()
+           locationManager.delegate = self
+           locationManager.desiredAccuracy = kCLLocationAccuracyBest
+           locationManager.requestAlwaysAuthorization()
+
+           if CLLocationManager.locationServicesEnabled(){
+               locationManager.startUpdatingLocation()
+           }
 
     }
 
  
     @IBAction func mapFindButton(_ sender: UIButton) {
+        curLangni = locationManager.location?.coordinate.latitude
+        curLongni  =  locationManager.location?.coordinate.longitude
         self.performSegue(withIdentifier: "goToMap", sender: self)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToMap"){
+            let destinationVC = segue.destination as! MapViewController
+            destinationVC.curLang = Float(curLangni!)
+            destinationVC.curLong = Float(curLongni!)
+        }
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+
+        let location = locations.last! as CLLocation
+
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        print(center.latitude)
     }
     
 }

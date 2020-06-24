@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrentShopViewController: UIViewController {
+class CurrentShopViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var shopNameLabel: UILabel!
     @IBOutlet weak var goBackB: UIButton!
@@ -72,16 +72,15 @@ class CurrentShopViewController: UIViewController {
         commentLabel.text = "Poeples Comments : "
         self.infoSection.addSubview(commentLabel)
         height = 390
+       
         let _: () = shopdatabase.getComments(keyId: shopName!, completion: {(list : [String]) -> Void in self.loadComments(comArr: list)})
         
+       
         //load the button
         loadSubmitButton(height: 500)
         
         // set the height for info section
         infoSection.contentSize.height = CGFloat(500 + 70)
-
-
-        
     }
     
     
@@ -98,18 +97,20 @@ class CurrentShopViewController: UIViewController {
     // function to load the comments
     func loadComments(comArr : [String]){
         let x = 30
+        var contentHeight = 30
         for eachComment in comArr{
             print(eachComment)
             let comments = UILabel(frame: CGRect(x: 10, y: height + x , width: 350, height: 30))
             if (eachComment != ""){
                 comments.text = "-" + eachComment
-                self.infoSection.addSubview(comments)
                 height += 30
-                
+                contentHeight += 30
+                self.infoSection.addSubview(comments)
             }
         }
         
     }
+    
     
     func loadSubmitButton(height : Int){
         // add rate submit button

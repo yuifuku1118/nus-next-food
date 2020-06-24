@@ -124,7 +124,24 @@ class Database{
 
 
 //MARK:  Core data FETCH related
+    
+    func getByCategory() -> [Shop]{
+        var shoplist = [Shop]()
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Shop")
+        request.returnsObjectsAsFaults = false
+              do {
+                  let result = try context.fetch(request)
+                  for data in result as! [NSManagedObject] {
+                    shoplist.append(data as! Shop)
+                }
+              } catch {
+                  print("Failed")
+              }
 
+        return shoplist
+    }
+    
     func getByCategory(categ : String) -> [Shop]{
         var shoplist = [Shop]()
         let context = appDelegate.persistentContainer.viewContext
@@ -212,6 +229,14 @@ class Database{
                         let id = document.documentID
                         let name = document.get("name") as! String
                         let locKey = document.get("locationKey") as! String
+                        var locLong = Float(0.00000)
+                        if let temp = document.get("locLong") as? NSNumber{
+                            locLong = temp.floatValue
+                        }
+                        var locLang = Float(0.00000)
+                        if let temp1 = document.get("locLang") as? NSNumber{
+                            locLang = temp1.floatValue
+                        }
                         let categ = document.get("category") as! String
                         let infotgt = name + "," + locKey + "," + categ
                         let image = self.getImage(keyId: "111111")
@@ -221,6 +246,8 @@ class Database{
                         newShop.setValue(id, forKey: "id")
                         newShop.setValue(name, forKey: "name")
                         newShop.setValue(locKey, forKey: "locationKey")
+                        newShop.setValue(locLang, forKey: "locLang")
+                        newShop.setValue(locLong, forKey: "locLong")
                         newShop.setValue(categ, forKey: "category")
                         newShop.setValue(infotgt, forKey: "info")
                         newShop.setValue(image, forKey: "image")
