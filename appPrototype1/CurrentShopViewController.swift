@@ -67,20 +67,32 @@ class CurrentShopViewController: UIViewController, UIScrollViewDelegate {
         //add the raing
         let _: () = shopdatabase.getRating(keyId: shopName!, completion: {(rate: Double) -> Void in self.loadRating(rating: rate)})
         
+
+        
+        height = 400
+        let menuLabel = UILabel(frame: CGRect(x: 10, y: height , width: 350, height: 30))
+        menuLabel.text = "Top menus and price"
+        menuLabel.textAlignment = NSTextAlignment.center
+        self.infoSection.addSubview(menuLabel)
+        
+        self.loadMenu(menuArr: ["potato", "$3.00" ,"Carrots", "$10.00"])
+        
+       
+        
+       
         //add the comment
-        let commentLabel = UILabel(frame: CGRect(x: 10, y: 390 , width: 350, height: 30))
+        height = height + 50
+        let commentLabel = UILabel(frame: CGRect(x: 10, y: height , width: 350, height: 30))
         commentLabel.text = "Poeples Comments : "
         self.infoSection.addSubview(commentLabel)
-        height = 390
-       
         let _: () = shopdatabase.getComments(keyId: shopName!, completion: {(list : [String]) -> Void in self.loadComments(comArr: list)})
         
-       
+        
         //load the button
-        loadSubmitButton(height: 500)
+        loadSubmitButton(height: 600)
         
         // set the height for info section
-        infoSection.contentSize.height = CGFloat(500 + 70)
+        infoSection.contentSize.height = CGFloat(600 + 70)
     }
     
     
@@ -103,6 +115,28 @@ class CurrentShopViewController: UIViewController, UIScrollViewDelegate {
             let comments = UILabel(frame: CGRect(x: 10, y: height + x , width: 350, height: 30))
             if (eachComment != ""){
                 comments.text = "-" + eachComment
+                
+                height += 30
+                contentHeight += 30
+                self.infoSection.addSubview(comments)
+            }
+        }
+        
+    }
+    
+    func loadMenu(menuArr : [String]){
+        let x = 30
+        var contentHeight = 30
+        let len = menuArr.count
+        var count = 0
+        for i in 1...len{
+            if(i % 2 == 0){
+                let menu = menuArr[count]
+                let price = menuArr[count + 1]
+                let comments = UILabel(frame: CGRect(x: 10, y: height + x , width: 350, height: 30))
+                comments.text = menu + " / " + price
+                comments.textAlignment = NSTextAlignment.center
+                count = count + 2
                 height += 30
                 contentHeight += 30
                 self.infoSection.addSubview(comments)

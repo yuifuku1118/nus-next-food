@@ -30,10 +30,58 @@
             filePath = "appPrototype1/CurrentShopViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "loadRating(rating:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44070722-072C-4A40-BC03-D3BBFC884C84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "appPrototype1/CurrentShopViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "44070722-072C-4A40-BC03-D3BBFC884C84 - 4a96103205a77242"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "appPrototype1.CurrentShopViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "appPrototype1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fukushimayuuichirou/Desktop/appPrototype1/appPrototype1/CurrentShopViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "6828">
+               </Location>
+               <Location
+                  uuid = "44070722-072C-4A40-BC03-D3BBFC884C84 - fcad029d6ba96c94"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Double) -&gt; () in appPrototype1.CurrentShopViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "appPrototype1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fukushimayuuichirou/Desktop/appPrototype1/appPrototype1/CurrentShopViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

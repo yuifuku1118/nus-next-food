@@ -27,7 +27,7 @@ class ShopListViewController: UIViewController {
         super.viewDidLoad()
         
         mainLabel.text = ""
-        print(mainLabelText!)
+        print("holla")
         
         self.loadListBeta(shoplist: shopdatabase.getByCategory(categ: mainLabelText!))
 

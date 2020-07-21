@@ -299,9 +299,10 @@ class Database{
         // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
         islandRef.getData(maxSize: 1 * 1024 * 1024) { data, error in
             if error != nil {
-            // Uh-oh, an error occurred!
+                print(error!)
           } else {
             // Data for "images/island.jpg" is returned
+                print("ok")
             returnImage = UIImage(data: data!)
           }
         }

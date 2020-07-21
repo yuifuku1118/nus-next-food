@@ -17,11 +17,11 @@
 		348BDC41246F654F003BEF8D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BDC40246F654F003BEF8D /* MapViewController.swift */; };
 		348BDC44246F656F003BEF8D /* ShopDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 348BDC42246F656F003BEF8D /* ShopDataModel.xcdatamodeld */; };
 		348BDC46246F65BA003BEF8D /* SerchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BDC45246F65BA003BEF8D /* SerchResultViewController.swift */; };
-		348BDC48246F65C3003BEF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348BDC47246F65C3003BEF8D /* Assets.xcassets */; };
 		348BDC4A246F6608003BEF8D /* ShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BDC49246F6608003BEF8D /* ShopListViewController.swift */; };
 		348BDC4C246F6638003BEF8D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BDC4B246F6638003BEF8D /* Database.swift */; };
 		348BDC4E246F68B7003BEF8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 348BDC4D246F68B6003BEF8D /* GoogleService-Info.plist */; };
 		348BDC50246FBDDD003BEF8D /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BDC4F246FBDDD003BEF8D /* RatingViewController.swift */; };
+		34F6E89224A63F1000CD22B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F6E89124A63F1000CD22B2 /* Assets.xcassets */; };
 		B90D952C173835D58B15C21B /* Pods_appPrototype1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA25FB08AB178E878642BFDF /* Pods_appPrototype1.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,11 +38,11 @@
 		348BDC40246F654F003BEF8D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		348BDC43246F656F003BEF8D /* ShopDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShopDataModel.xcdatamodel; sourceTree = "<group>"; };
 		348BDC45246F65BA003BEF8D /* SerchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerchResultViewController.swift; sourceTree = "<group>"; };
-		348BDC47246F65C3003BEF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Prototype1/PT1/sample1/Assets.xcassets; sourceTree = "<group>"; };
 		348BDC49246F6608003BEF8D /* ShopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopListViewController.swift; sourceTree = "<group>"; };
 		348BDC4B246F6638003BEF8D /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		348BDC4D246F68B6003BEF8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		348BDC4F246FBDDD003BEF8D /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		34F6E89124A63F1000CD22B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6805B6D0135712F723D2C41F /* Pods-appPrototype1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appPrototype1.release.xcconfig"; path = "Target Support Files/Pods-appPrototype1/Pods-appPrototype1.release.xcconfig"; sourceTree = "<group>"; };
 		82B273458AE71D13C4799148 /* Pods-appPrototype1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appPrototype1.debug.xcconfig"; path = "Target Support Files/Pods-appPrototype1/Pods-appPrototype1.debug.xcconfig"; sourceTree = "<group>"; };
 		DA25FB08AB178E878642BFDF /* Pods_appPrototype1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appPrototype1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +100,7 @@
 				348BDC49246F6608003BEF8D /* ShopListViewController.swift */,
 				348BDC4B246F6638003BEF8D /* Database.swift */,
 				348BDC3C246F64F7003BEF8D /* Main.storyboard */,
-				348BDC47246F65C3003BEF8D /* Assets.xcassets */,
+				34F6E89124A63F1000CD22B2 /* Assets.xcassets */,
 				348BDC33246F6485003BEF8D /* LaunchScreen.storyboard */,
 				348BDC36246F6485003BEF8D /* Info.plist */,
 				348BDC4D246F68B6003BEF8D /* GoogleService-Info.plist */,
@@ -180,8 +180,8 @@
 			files = (
 				348BDC35246F6485003BEF8D /* LaunchScreen.storyboard in Resources */,
 				348BDC4E246F68B7003BEF8D /* GoogleService-Info.plist in Resources */,
-				348BDC48246F65C3003BEF8D /* Assets.xcassets in Resources */,
 				348BDC3D246F64F7003BEF8D /* Main.storyboard in Resources */,
+				34F6E89224A63F1000CD22B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

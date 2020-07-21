@@ -31,8 +31,6 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         
         shopdatabase.setData()
 
-
-        
         // Do any additional setup after loading the view.
         locationManager = CLLocationManager()
            locationManager.delegate = self
@@ -42,7 +40,6 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
            if CLLocationManager.locationServicesEnabled(){
                locationManager.startUpdatingLocation()
            }
-
     }
 
  
@@ -50,13 +47,12 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         curLangni = locationManager.location?.coordinate.latitude
         curLongni  =  locationManager.location?.coordinate.longitude
         self.performSegue(withIdentifier: "goToMap", sender: self)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "goToMap"){
             let destinationVC = segue.destination as! MapViewController
-            destinationVC.curLang = Float(curLangni!)
+            destinationVC.curLang = Float(curLangni ?? 37.11)
             destinationVC.curLong = Float(curLongni!)
         }
     }
