@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		348BDC20246F647C003BEF8D /* appPrototype1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appPrototype1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		348BDC20246F647C003BEF8D /* NUS Next Food .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NUS Next Food .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		348BDC23246F647C003BEF8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		348BDC25246F647C003BEF8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		348BDC27246F647C003BEF8D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		348BDC21246F647C003BEF8D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				348BDC20246F647C003BEF8D /* appPrototype1.app */,
+				348BDC20246F647C003BEF8D /* NUS Next Food .app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			);
 			name = appPrototype1;
 			productName = appPrototype1;
-			productReference = 348BDC20246F647C003BEF8D /* appPrototype1.app */;
+			productReference = 348BDC20246F647C003BEF8D /* NUS Next Food .app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -389,7 +389,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nusextfood.appPrototype1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "NUS Next Food ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -408,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nusextfood.appPrototype1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "NUS Next Food ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

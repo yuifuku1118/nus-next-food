@@ -332,13 +332,11 @@ class Database{
           }
         }
         return returnImage!.jpegData(compressionQuality: 1)! as NSData
-        
     }
     
     func getComments(keyId : String, completion:  @escaping ([String]) -> Void){
         
         var commentsArr = [String]()
-        
         let docRef = db.collection("shops").document(keyId)
         
         docRef.getDocument { (document, error) in

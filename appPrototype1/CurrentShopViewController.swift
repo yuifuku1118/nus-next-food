@@ -83,7 +83,7 @@ class CurrentShopViewController: UIViewController, UIScrollViewDelegate {
         //add the comment
         height = height + 50
         let commentLabel = UILabel(frame: CGRect(x: 10, y: height , width: 350, height: 30))
-        commentLabel.text = "Poeples Comments : "
+        commentLabel.text = "People Comments : "
         self.infoSection.addSubview(commentLabel)
         let _: () = shopdatabase.getComments(keyId: shopName!, completion: {(list : [String]) -> Void in self.loadComments(comArr: list)})
         
