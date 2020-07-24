@@ -239,7 +239,7 @@ class Database{
                         }
                         let categ = document.get("category") as! String
                         let infotgt = name + "," + locKey + "," + categ
-                        let image = self.getImage(keyId: "111111")
+                        let image = self.getImage(keyId: id)
                         let detail = document.get("description") as! String
                         //let imageKey = image.pngData()
 
@@ -288,7 +288,32 @@ class Database{
     
     func getImage(keyId : String) -> NSData{
         
-        var returnImage = UIImage(named: "oishi")
+        var returnImage = UIImage(named: "1")
+        
+        if(keyId == "111111"){
+            returnImage = UIImage(named: "1")
+        }else if(keyId == "111112"){
+            returnImage = UIImage(named: "5")
+        }else if(keyId == "111113"){
+            returnImage = UIImage(named: "8")
+        }else if(keyId == "111114"){
+            returnImage = UIImage(named: "2")
+        }else if(keyId == "111115"){
+            returnImage = UIImage(named: "7b")
+        }else if(keyId == "111116"){
+            returnImage = UIImage(named: "9")
+        }else if(keyId == "111117"){
+            returnImage = UIImage(named: "10")
+        }else if(keyId == "111118"){
+            returnImage = UIImage(named: "10")
+        }else if(keyId == "111119"){
+            returnImage = UIImage(named: "4")
+        }else if(keyId == "111120"){
+            returnImage = UIImage(named: "6")
+        }else{
+            returnImage = UIImage(named: "nus")
+        }
+
         let storageRef = storage.reference()
         
         let imageURL = "shopImages/" + keyId + ".jpg"
@@ -303,7 +328,7 @@ class Database{
           } else {
             // Data for "images/island.jpg" is returned
                 print("ok")
-            returnImage = UIImage(data: data!)
+            //returnImage = UIImage(data: data!)
           }
         }
         return returnImage!.jpegData(compressionQuality: 1)! as NSData
