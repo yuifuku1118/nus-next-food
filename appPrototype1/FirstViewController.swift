@@ -53,7 +53,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         if(segue.identifier == "goToMap"){
             let destinationVC = segue.destination as! MapViewController
             destinationVC.curLang = Float(curLangni ?? 37.11)
-            destinationVC.curLong = Float(curLongni!)
+            destinationVC.curLong = Float(curLongni ?? 37.11)
         }
     }
     
